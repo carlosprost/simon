@@ -1,0 +1,26 @@
+<section class="container-simon">
+  <div class="simon">
+    <div class="aparato">
+      <div class="bloque">
+        <button class="btns simon-blue btn-left-up" id="blue" (click)="presionarBtnSimon($event, 'blue')"></button>
+        <button class="btns simon-red btn-right-up" id="red" (click)="presionarBtnSimon($event, 'red')"></button>
+      </div>
+      <div class="bloque">
+        <button class="btns simon-yellow btn-left-down" id="yellow" (click)="presionarBtnSimon($event, 'yellow')"></button>
+        <button class="btns simon-green btn-right-down" id="green" (click)="presionarBtnSimon($event, 'green')"></button>
+      </div>
+    </div>
+    <div class="center">
+      <div class="btn-center">
+        <button class="btn-center-play-stop" (click)="startGame()">
+          <span class="play" *ngIf="!play">
+            <i class="bi bi-play"></i>
+          </span>
+          <span class="stop" *ngIf="play">
+            <i class="bi bi-stop"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
