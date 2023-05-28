@@ -8,8 +8,10 @@
   align-items: center;
 
   .simon {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,31 +36,29 @@
         z-index: 3;
         transform: translate(-50%, -50%);
 
-        .btn-center-play-stop{
-            width: 80%;
-            height: 80%;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 3;
-            transform: translate(-50%, -50%);
-            background-color: #0e0236;
-            color: #fff;
+        .btn-center-play-stop {
+          width: 80%;
+          height: 80%;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 3;
+          transform: translate(-50%, -50%);
+          background-color: #0e0236;
+          color: #fff;
 
-            border: 0;
-            
-            .play{
+          border: 0;
 
-                padding-left: 10px;
-                font-size: 5rem;
-            }
+          .play {
+            padding-left: 10px;
+            font-size: 5rem;
+          }
 
-            .stop{
-                padding-left: 5px;
-                font-size: 5rem;
-            }
-
+          .stop {
+            padding-left: 5px;
+            font-size: 5rem;
+          }
         }
 
         .green {
@@ -88,16 +88,12 @@
         align-items: center;
         gap: 10px;
 
-        
-
         .btn-left-up {
           width: 220px;
           height: 220px;
           margin-left: 10px;
           border-top-left-radius: 100%;
           background-color: blue;
-
-                              
         }
         .btn-right-up {
           width: 220px;
@@ -105,8 +101,6 @@
           margin-right: 10px;
           border-top-right-radius: 100%;
           background-color: red;
-
-          
         }
         .btn-left-down {
           width: 220px;
@@ -114,8 +108,6 @@
           margin-left: 10px;
           border-bottom-left-radius: 100%;
           background-color: yellow;
-
-          
         }
         .btn-right-down {
           width: 220px;
@@ -123,36 +115,33 @@
           margin-right: 10px;
           border-bottom-right-radius: 100%;
           background-color: green;
-
         }
 
-        .blue{
+        .blue {
           background: rgb(3, 124, 194);
           filter: brightness(1.75);
         }
-        
-        .red{
+
+        .red {
           background: rgb(240, 93, 57);
           filter: brightness(1.75);
         }
-        
-        .yellow{
+
+        .yellow {
           background: rgb(211, 228, 149);
           filter: brightness(1.75);
         }
-        
-        .green{
+
+        .green {
           background: rgb(28, 241, 110);
           filter: brightness(1.75);
         }
 
-        .light{
-            box-shadow: inset 0 0 15px 10px rgba(255, 255, 255, 0.9);
-            filter: brightness(1.75);
+        .light {
+          box-shadow: inset 0 0 15px 10px rgba(255, 255, 255, 0.9);
+          filter: brightness(1.75);
         }
       }
     }
   }
 }
-
-
